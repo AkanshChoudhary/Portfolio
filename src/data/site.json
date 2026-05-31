@@ -1,0 +1,217 @@
+{
+  "profile": {
+    "name": "Akansh Choudhary",
+    "navSuffix": "android",
+    "title": "Software Engineer \u00b7 Android & Flutter",
+    "email": "akanshchoudhary79@gmail.com",
+    "phoneDisplay": "(412) 339-9483",
+    "location": "San Jose, CA \u00b7 USA"
+  },
+  "links": {
+    "github": "https://github.com/AkanshChoudhary",
+    "linkedin": "https://www.linkedin.com/in/akansh-choudhary",
+    "resume": "https://drive.google.com/drive/folders/1zEeesDE_yJ8YU1iUXYqKv9Flwk-P0kIO?usp=share_link",
+    "playStore": "https://play.google.com/store/search?q=Dividr&c=apps"
+  },
+  "navigation": [
+    { "id": "about", "label": "About" },
+    { "id": "projects", "label": "Projects" },
+    { "id": "experience", "label": "Experience" },
+    { "id": "contact", "label": "Contact" }
+  ],
+  "hero": {
+    "eyebrow": "Open for collaborations",
+    "introPrefix": "Hi - I am",
+    "headlineBeforeAccent": "Building",
+    "headlineAccent": "apps",
+    "headlineAfterAccent": "is what I love.",
+    "metrics": [
+      {
+        "label": "Studies",
+        "value": "Carnegie Mellon University \u00b7 MSE Scalable Systems"
+      },
+      {
+        "label": "Journey",
+        "value": "Adobe \u00b7 CMU Research \u00b7 Amdocs \u00b7 GreedyGame"
+      }
+    ],
+    "phoneHint": {
+      "line1": "Drag to rotate",
+      "line2": "Tap an app to explore"
+    }
+  },
+  "about": {
+    "heading": "About me",
+    "body": "I build native Android and Flutter cross-platform applications\u2014from real-time collaborative image editors and expense-splitting apps to IoT privacy tools serving 100,000+ devices. My experience spans Android development at Adobe, research at Carnegie Mellon, and billing infrastructure at Amdocs handling SpaceX satellite events.",
+    "skillsHeading": "Skills",
+    "educationHeading": "Education"
+  },
+  "skills": [
+    "Native Android",
+    "Flutter",
+    "Jetpack Compose",
+    "Kotlin",
+    "Dart",
+    "C++",
+    "Java",
+    "Python",
+    "Shell scripting",
+    "Perl",
+    "PostgreSQL",
+    "MySQL",
+    "Firebase Firestore",
+    "Spring Boot",
+    "Flask",
+    "Git",
+    "Jenkins",
+    "Linux"
+  ],
+  "education": [
+    {
+      "school": "Carnegie Mellon University",
+      "degree": "Master of Software Engineering \u2014 Scalable Systems",
+      "location": "Pittsburgh, PA",
+      "graduation": "December 2026"
+    },
+    {
+      "school": "Vellore Institute of Technology",
+      "degree": "B.Tech \u2014 Computer Science & Engineering and Business Systems",
+      "location": "Tamil Nadu, India",
+      "graduation": "July 2023"
+    }
+  ],
+  "projectsSection": {
+    "heading": "Projects",
+    "linkLabel": "Explore \u2192"
+  },
+  "projects": [
+    {
+      "id": "canvasx",
+      "name": "CanvasX",
+      "description": "Real-time collaborative image editor with layers, blend modes, text tools, AI image generation, and Material 3 UI. GPU-assisted render pipeline using AGSL RuntimeShader and Firebase real-time collaboration with 50ms throttling.",
+      "stack": "Kotlin \u00b7 Jetpack Compose \u00b7 Firebase \u00b7 AGSL \u00b7 Room",
+      "link": "https://github.com/AkanshChoudhary/CanvasX",
+      "accent": "#f9a8d4"
+    },
+    {
+      "id": "dividr",
+      "name": "Dividr",
+      "description": "Native Android expense-splitting app with accurate equal-share expense logic and rounding adjustments for group reconciliation. Built with Clean Architecture, MVVM, Dagger Hilt, and SOLID principles.",
+      "stack": "Kotlin \u00b7 Jetpack Compose \u00b7 Firebase Auth \u00b7 Firestore \u00b7 Hilt",
+      "link": "https://github.com/AkanshChoudhary/Dividr",
+      "accent": "#6ee7b7"
+    },
+    {
+      "id": "habitpro",
+      "name": "HabitPro",
+      "description": "Flutter habit-building app that guides users through 21-day habit formation with category-based habits, custom habit creation, daily task progression, and AI-generated task suggestions.",
+      "stack": "Flutter \u00b7 Dart \u00b7 Appwrite Auth \u00b7 Firebase Firestore \u00b7 OpenAI API",
+      "link": "https://github.com/AkanshChoudhary/HabitPro",
+      "accent": "#38bdf8"
+    },
+    {
+      "id": "newzzy",
+      "name": "Newzzy",
+      "description": "Jetpack Compose news app that loads live trending news, supports keyword search, saves articles locally, and opens full article details in WebView.",
+      "stack": "Kotlin \u00b7 Jetpack Compose \u00b7 Clean Architecture \u00b7 MVVM \u00b7 Hilt \u00b7 Retrofit \u00b7 Room",
+      "link": "https://github.com/AkanshChoudhary/Newzzy",
+      "accent": "#60a5fa"
+    }
+  ],
+  "experienceSection": {
+    "heading": "Work Experience"
+  },
+  "experience": [
+    {
+      "company": "Adobe",
+      "role": "Software Engineering Intern",
+      "location": "San Jose, CA",
+      "period": "May 2026 \u2014 Aug 2026",
+      "bullets": [
+        "Working under Digital Video and Ads team for the launch of an Android app of their flagship product \"Premiere Pro.\"  Using state-of-the-art Android technologies around image and video editing.",
+        "Learning and adopting Jetpack Compose, Navigation3, Adaptive UI, Dependency Injection, Media3, and other modern libraries.",
+        "Following a highly structured engineering workflow with strict coding standards, automated checks, peer code reviews, controlled code pushes, and Agile sprint execution."
+      ]
+    },
+    {
+      "company": "Carnegie Mellon University",
+      "role": "Graduate Research Assistant",
+      "location": "Pittsburgh, PA",
+      "period": "Dec 2025 \u2014 May 2026",
+      "bullets": [
+        "Researched under Prof. Norman Sadeh, CMU School of Computer Science on IoT privacy and security.",
+        "Developed a Flutter cross-platform application with primary focus on user security and privacy. Implemented the Data Rights Protocol (DRP) to help users discover and control data collected about them via IoT devices.",
+        "The application hosts over 100,000 IoT devices and users can discover the ones closest to them based on different device types like security cameras, audio sensors, etc."
+      ]
+    },
+    {
+      "company": "Amdocs",
+      "role": "Software Engineering Associate",
+      "location": "Pune, India",
+      "period": "Jul 2023 \u2014 Jul 2025",
+      "bullets": [
+        "Built automation tools in Python to reduce UNIX sandbox environment sanity time by 66% and manual PostgreSQL comparison from 2 days to 1 hour.",
+        "Worked under OPTUS team to rate events coming from SpaceX satellites via user SIM cards and enhanced SQL tables to support new data fields of SpaceX project.",
+        "Contributed to Amdocs billing architectural upgrade by updating Shell scripts and Perl jobs to a newer architecture, executed in scheduled Jenkins CI/CD pipelines and DAGs.",
+        "Leveraged PostgreSQL, Hive, Cloudera, Oracle DB, Jenkins and Kubernetes for the billing architectural upgrade."
+      ]
+    },
+    {
+      "company": "GreedyGame",
+      "role": "Android Developer Intern",
+      "location": "Bangalore, India",
+      "period": "Oct 2022 \u2014 Jan 2023",
+      "bullets": [
+        "Rolled out user gamification features in live Android applications having more than 1 million downloads on Play Store.",
+        "Led development of an internal application with Kotlin and MVVM architecture to manage more than 100 live ad campaigns spread across 5 applications on Play Store.",
+        "Volunteered to help and mentor college students at GreedyGame's Appicorns app dev hackathon."
+      ]
+    }
+  ],
+  "publications": {
+    "heading": "Publication",
+    "items": [
+      {
+        "title": "A comprehensive review on NUI, multi-sensory interfaces and UX design for applications and devices for visually impaired users.",
+        "venue": "Frontiers in Public Health (2024)",
+        "doi": "https://doi.org/10.3389/fpubh.2024.1357160",
+        "linkLabel": "View on Frontiers \u2192"
+      },
+      {
+        "title": "Comparative Analysis on Artificial Intelligence Technologies and its Application in FinTech.",
+        "venue": "IEEE Xplore",
+        "doi": "https://ieeexplore.ieee.org/abstract/document/10010573",
+        "linkLabel": "View on IEEE Xplore \u2192"
+      }
+    ]
+  },
+  "contact": {
+    "heading": "Let\u2019s connect",
+    "body": "Open for collaborations, full-time opportunities, or a chat about Android, Flutter, and systems engineering.",
+    "emailButtonPrefix": "Email",
+    "linkedinLabel": "LinkedIn",
+    "githubLabel": "GitHub"
+  },
+  "footer": {
+    "suffix": "Crafted with React & Three.js.",
+    "backToTopLabel": "Back to top"
+  },
+  "phone": {
+    "weather": {
+      "temperature": "72\u00b0F",
+      "condition": "Sunny",
+      "location": "San Jose, CA"
+    },
+    "apps": {
+      "resume": "Resume",
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "projects": "Projects",
+      "work": "Work",
+      "about": "About",
+      "contact": "Contact"
+    },
+    "searchPlaceholder": "Search",
+    "networkLabel": "5G"
+  }
+}

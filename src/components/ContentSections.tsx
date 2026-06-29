@@ -51,6 +51,15 @@ const reveal: Variants = {
   }),
 }
 
+function renderBoldText(text: string) {
+  return text.split(/(\*\*.*?\*\*)/g).map((part, index) => {
+    if (part.startsWith('**') && part.endsWith('**')) {
+      return <strong key={index}>{part.slice(2, -2)}</strong>
+    }
+    return part
+  })
+}
+
 export function AboutSection() {
   return (
     <ParallaxSection id="about" className="content-section--about">
@@ -74,7 +83,7 @@ export function AboutSection() {
           viewport={{ once: true, margin: '-60px' }}
           custom={1}
         >
-          {site.about.body}
+          {renderBoldText(site.about.body)}
         </motion.p>
 
         <motion.div
@@ -284,7 +293,7 @@ export function ContactSection() {
           <p>{site.contact.body}</p>
           <div className="cta-actions">
             <a className="btn btn--primary" href={`mailto:${site.profile.email}`}>
-              {site.contact.emailButtonPrefix} {site.profile.email}
+              {site.profile.email}
             </a>
             <a className="btn btn--ghost" href={site.links.linkedin} target="_blank" rel="noopener noreferrer">
               {site.contact.linkedinLabel}
@@ -303,9 +312,6 @@ export function Footer() {
   return (
     <footer className="site-footer">
       <div className="shell site-footer__inner">
-        <p>
-          &copy; {new Date().getFullYear()} {site.profile.name}. {site.footer.suffix}
-        </p>
         <a href="#top">{site.footer.backToTopLabel}</a>
       </div>
     </footer>

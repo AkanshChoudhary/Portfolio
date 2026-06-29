@@ -898,6 +898,11 @@ a {
   line-height: 1.7;
 }
 
+.lede strong {
+  color: var(--text);
+  font-weight: 700;
+}
+
 .subsection-title {
   margin: 44px 0 20px;
   font-size: 1.2rem;
@@ -1297,4 +1302,197 @@ a {
 
 .site-footer__inner > a:last-child:hover {
   color: var(--accent);
+}
+
+/* --- Minimal light theme overrides --------------------------------------- */
+:root {
+  --bg-0: #f4f1ec;
+  --bg-1: #ebe7df;
+  --bg-glass: rgba(255, 255, 255, 0.72);
+  --stroke: rgba(18, 18, 18, 0.1);
+  --text: #111111;
+  --muted: rgba(17, 17, 17, 0.62);
+  --accent: #111111;
+  --accent-2: #6f6a60;
+  --shadow-glow: 0 28px 80px rgba(17, 17, 17, 0.08);
+}
+
+body {
+  background: var(--bg-0);
+}
+
+.parallax-backdrop__mesh {
+  background:
+    radial-gradient(ellipse at 0% 8%, rgba(181, 220, 237, 0.65), transparent 46%),
+    radial-gradient(ellipse at 100% 8%, rgba(236, 116, 153, 0.42), transparent 46%),
+    linear-gradient(180deg, #f6f3ee 0%, #ede9e1 56%, #f4f1ec 100%);
+}
+
+.parallax-backdrop__orb {
+  mix-blend-mode: multiply;
+  opacity: 0.35;
+}
+
+.parallax-backdrop__orb--a {
+  background: radial-gradient(circle at 35% 35%, rgba(236, 116, 153, 0.5), rgba(231, 193, 204, 0.18));
+}
+
+.parallax-backdrop__orb--b {
+  background: radial-gradient(circle at 50% 50%, rgba(181, 220, 237, 0.62), rgba(191, 212, 216, 0.2));
+}
+
+.parallax-backdrop__grid {
+  opacity: 0.06;
+  background-image:
+    linear-gradient(rgba(17, 17, 17, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(17, 17, 17, 0.045) 1px, transparent 1px);
+}
+
+.site-nav {
+  border-bottom-color: rgba(17, 17, 17, 0.08);
+  background: linear-gradient(to bottom, rgba(246, 243, 238, 0.86), rgba(246, 243, 238, 0.64));
+}
+
+.site-nav__links button:hover,
+.site-nav__links a:hover {
+  background: rgba(17, 17, 17, 0.06);
+}
+
+.site-nav__resume {
+  color: #111111 !important;
+  border-color: rgba(17, 17, 17, 0.18) !important;
+  background: rgba(255, 255, 255, 0.72) !important;
+}
+
+.site-nav__resume:hover {
+  border-color: rgba(17, 17, 17, 0.34) !important;
+}
+
+.hero__pulse {
+  background: #111111;
+  box-shadow:
+    0 0 0 0 rgba(17, 17, 17, 0.26),
+    0 0 24px rgba(17, 17, 17, 0.18);
+}
+
+.hero__title-accent {
+  background: linear-gradient(120deg, #111111, #5f5b54 48%, #111111 95%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero__location,
+.hero__canvas-hint,
+.btn--ghost,
+.skill-chip,
+.publication-card {
+  background: rgba(255, 255, 255, 0.58);
+  border-color: rgba(17, 17, 17, 0.1);
+}
+
+.hero__location {
+  color: rgba(17, 17, 17, 0.78);
+}
+
+.hero__canvas-hint {
+  color: rgba(17, 17, 17, 0.68);
+  background: rgba(255, 255, 255, 0.7);
+  border-color: rgba(17, 17, 17, 0.14);
+}
+
+.hero__location svg {
+  color: #111111;
+}
+
+.btn--primary {
+  background: #111111;
+  color: #f8f5ef;
+}
+
+.btn--ghost {
+  color: #111111;
+}
+
+.btn--ghost:hover,
+.skill-chip:hover {
+  background: rgba(17, 17, 17, 0.06);
+}
+
+.content-section--alt {
+  background: linear-gradient(180deg, transparent 0%, rgba(255, 255, 255, 0.28) 48%, transparent 100%);
+}
+
+.content-section__parallax-bg {
+  background:
+    radial-gradient(ellipse at 12% 0%, rgba(181, 220, 237, 0.34), transparent 55%),
+    linear-gradient(145deg, rgba(255, 255, 255, 0.78), rgba(255, 255, 255, 0.48));
+  box-shadow: inset 0 0 0 1px rgba(17, 17, 17, 0.06);
+}
+
+.glass-card {
+  background: linear-gradient(155deg, rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.52));
+  border-color: rgba(17, 17, 17, 0.1);
+}
+
+.lede,
+.publication-card__title {
+  color: rgba(17, 17, 17, 0.78);
+}
+
+.subsection-title,
+.edu-card__school,
+.carousel-project-card__body h3,
+.carousel-exp-card h3,
+.cta-block h2 {
+  color: #111111;
+}
+
+.skill-chip,
+.edu-card__degree,
+.edu-card__detail,
+.carousel-project-card__body > p:first-of-type,
+.carousel-exp-card__bullets,
+.cta-block p {
+  color: rgba(17, 17, 17, 0.68);
+}
+
+.edu-card__meta,
+.publication-card__venue,
+.carousel-exp-card__loc,
+.carousel-exp-card__period,
+.site-footer__inner p {
+  color: rgba(17, 17, 17, 0.5);
+}
+
+.carousel-project-card__stack,
+.carousel-exp-card__company,
+.site-footer__inner > a:last-child {
+  color: rgba(17, 17, 17, 0.62);
+}
+
+.publication-card {
+  border-color: rgba(17, 17, 17, 0.08);
+}
+
+.publication-card__link,
+.carousel-project-card__link {
+  color: #111111;
+}
+
+.focus-carousel__arrow {
+  color: rgba(17, 17, 17, 0.78);
+  background: rgba(255, 255, 255, 0.8);
+  border-color: rgba(17, 17, 17, 0.1);
+}
+
+.focus-carousel__arrow:hover {
+  color: #111111;
+  background: rgba(17, 17, 17, 0.06);
+  border-color: rgba(17, 17, 17, 0.2);
+}
+
+.site-footer {
+  border-top-color: rgba(17, 17, 17, 0.08);
+  background: linear-gradient(to top, rgba(232, 228, 220, 0.72), transparent);
 }

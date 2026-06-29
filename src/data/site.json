@@ -88,16 +88,16 @@
     {
       "id": "canvasx",
       "name": "CanvasX",
-      "description": "Real-time collaborative image editor with layers, blend modes, text tools, AI image generation, and Material 3 UI. GPU-assisted render pipeline using AGSL RuntimeShader and Firebase real-time collaboration with 50ms throttling.",
-      "stack": "Kotlin \u00b7 Jetpack Compose \u00b7 Firebase \u00b7 AGSL \u00b7 Room",
+      "description": "Kotlin and Jetpack Compose real-time collaborative image editor with layers, blend modes, text tools, AI image generation, and Material 3 UI. Designed a GPU-assisted render pipeline with AGSL RuntimeShader, RenderNode/HardwareRenderer, bitmap caching, and a hybrid Compose/background renderer.",
+      "stack": "Kotlin \u00b7 Jetpack Compose \u00b7 AGSL \u00b7 Firebase Auth \u00b7 Firestore \u00b7 Realtime Database \u00b7 Storage \u00b7 Room",
       "link": "https://github.com/AkanshChoudhary/CanvasX",
       "accent": "#f9a8d4"
     },
     {
       "id": "dividr",
       "name": "Dividr",
-      "description": "Native Android expense-splitting app with accurate equal-share expense logic and rounding adjustments for group reconciliation. Built with Clean Architecture, MVVM, Dagger Hilt, and SOLID principles.",
-      "stack": "Kotlin \u00b7 Jetpack Compose \u00b7 Firebase Auth \u00b7 Firestore \u00b7 Hilt",
+      "description": "Native Android expense-splitting app with accurate share calculations and rounding adjustments for group reconciliation. Designed with Clean Architecture, MVVM, Dagger Hilt, and SOLID principles, with Smart Simplify planned through OpenAI agent integration.",
+      "stack": "Kotlin \u00b7 Jetpack Compose \u00b7 Firebase Auth \u00b7 Firestore \u00b7 Dagger Hilt \u00b7 OpenAI Agents",
       "link": "https://github.com/AkanshChoudhary/Dividr",
       "accent": "#6ee7b7"
     },
@@ -128,9 +128,10 @@
       "location": "San Jose, CA",
       "period": "May 2026 \u2014 Aug 2026",
       "bullets": [
-        "Working under Digital Video and Ads team for the launch of an Android app of their flagship product \"Premiere Pro.\"  Using state-of-the-art Android technologies around image and video editing.",
-        "Learning and adopting Jetpack Compose, Navigation3, Adaptive UI, Dependency Injection, Media3, and other modern libraries.",
-        "Following a highly structured engineering workflow with strict coding standards, automated checks, peer code reviews, controlled code pushes, and Agile sprint execution."
+        "Contributing to the launch of Premiere for Android, built with state-of-the-art video editing features, renderer work, and Adobe AI integrations.",
+        "Implemented features using Jetpack Compose, Navigation3, Adaptive UI, Dependency Injection, Media3, and modern Android libraries.",
+        "Owned key areas including logging, Adaptive UI, consent dialogs, and other product features through structured Agile epics and user stories.",
+        "Collaborated with project managers and design leads to clarify requirements, align expectations, and verify the end results of my work."
       ]
     },
     {
@@ -139,9 +140,9 @@
       "location": "Pittsburgh, PA",
       "period": "Dec 2025 \u2014 May 2026",
       "bullets": [
-        "Researched under Prof. Norman Sadeh, CMU School of Computer Science on IoT privacy and security.",
-        "Developed a Flutter cross-platform application with primary focus on user security and privacy. Implemented the Data Rights Protocol (DRP) to help users discover and control data collected about them via IoT devices.",
-        "The application hosts over 100,000 IoT devices and users can discover the ones closest to them based on different device types like security cameras, audio sensors, etc."
+        "Researched IoT privacy and security under Prof. Norman Sadeh at Carnegie Mellon University's School of Computer Science.",
+        "Developed a Flutter cross-platform application focused on user security and privacy, implementing the Data Rights Protocol (DRP) to help users discover and control data collected by nearby IoT devices.",
+        "Built support for exposing over 100,000 IoT devices, allowing users to discover nearby devices by type, including security cameras and audio sensors."
       ]
     },
     {
@@ -150,10 +151,10 @@
       "location": "Pune, India",
       "period": "Jul 2023 \u2014 Jul 2025",
       "bullets": [
-        "Built automation tools in Python to reduce UNIX sandbox environment sanity time by 66% and manual PostgreSQL comparison from 2 days to 1 hour.",
-        "Worked under OPTUS team to rate events coming from SpaceX satellites via user SIM cards and enhanced SQL tables to support new data fields of SpaceX project.",
-        "Contributed to Amdocs billing architectural upgrade by updating Shell scripts and Perl jobs to a newer architecture, executed in scheduled Jenkins CI/CD pipelines and DAGs.",
-        "Leveraged PostgreSQL, Hive, Cloudera, Oracle DB, Jenkins and Kubernetes for the billing architectural upgrade."
+        "Built Python automation tools that reduced UNIX environment validation time by 66% and cut manual PostgreSQL comparison effort from 2 days to 1 hour.",
+        "Enabled the OPTUS team to rate satellite events via user SIM cards and enhanced SQL tables to support new SpaceX project data fields.",
+        "Contributed to the Amdocs billing architecture upgrade for OPTUS by migrating old Shell scripts and Perl jobs to a newer architecture executed through scheduled Jenkins CI/CD pipelines and DAGs.",
+        "Worked across PostgreSQL, Hive, Cloudera, Oracle DB, Jenkins, and Kubernetes for the billing architectural upgrade."
       ]
     },
     {
@@ -163,7 +164,7 @@
       "period": "Oct 2022 \u2014 Jan 2023",
       "bullets": [
         "Rolled out user gamification features in live Android applications having more than 1 million downloads on Play Store.",
-        "Led development of an internal application with Kotlin and MVVM architecture to manage more than 100 live ad campaigns spread across 5 applications on Play Store.",
+        "Led development of an internal Kotlin and MVVM application to manage 100+ live ad campaigns across 5 Play Store applications, closely collaborating with backend, UI, and design teams.",
         "Volunteered to help and mentor college students at GreedyGame's Appicorns app dev hackathon."
       ]
     }

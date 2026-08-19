@@ -124,14 +124,14 @@
   "experience": [
     {
       "company": "Adobe",
-      "role": "Software Engineering Intern",
+      "role": "Software Engineering Intern | Android Developer",
       "location": "San Jose, CA",
       "period": "May 2026 \u2014 Aug 2026",
       "bullets": [
-        "Contributing to the launch of Premiere for Android, built with state-of-the-art video editing features, renderer work, and Adobe AI integrations.",
-        "Implemented features using Jetpack Compose, Navigation3, Adaptive UI, Dependency Injection, Media3, and modern Android libraries.",
-        "Owned key areas including logging, Adaptive UI, consent dialogs, and other product features through structured Agile epics and user stories.",
-        "Collaborated with project managers and design leads to clarify requirements, align expectations, and verify the end results of my work."
+        "Contributing to the launch of Adobe Premiere for Android, building video editing, rendering, and Adobe AI features using Jetpack Compose, Material 3, Adaptive UI, Dependency Injection, and MVVM.",
+        "Implemented custom logging, consent flows, user analytics, and several production-critical bug fixes to improve launch readiness.",
+        "Partnered with Google on Adaptive UI Tiers, improving keyboard, focus, and large-screen support; built an AI skill for adaptive code generation.",
+        "Collaborated with product managers and design leads to define requirements, align on implementation decisions, and validate features against product and design expectations."
       ]
     },
     {

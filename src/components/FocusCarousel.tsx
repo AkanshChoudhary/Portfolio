@@ -30,26 +30,15 @@ export function FocusCarousel({
   const x = useMotionValue(0)
   const springX = useSpring(x, { stiffness: 140, damping: 30, mass: 1 })
 
-  const getStartOffset = useCallback(() => {
-    const containerWidth = containerRef.current?.clientWidth ?? 800
-    const shellMaxWidth = 1320
-    const shellPadding = Math.max(24, Math.min(containerWidth * 0.05, 60))
-    if (containerWidth > shellMaxWidth) {
-      return (containerWidth - shellMaxWidth) / 2 + shellPadding
-    }
-    return shellPadding
-  }, [])
-
   const scrollToIdx = useCallback(
     (idx: number) => {
       const clamped = Math.max(0, Math.min(count - 1, idx))
       setActiveIdx(clamped)
-      const startOffset = getStartOffset()
-      animate(x, isNarrow ? startOffset : -(clamped * cellWidth) + startOffset, {
+      animate(x, isNarrow ? 0 : -(clamped * cellWidth), {
         type: 'spring', stiffness: 140, damping: 30, mass: 1,
       })
     },
-    [count, cellWidth, getStartOffset, isNarrow, x],
+    [count, cellWidth, isNarrow, x],
   )
 
   const goLeft = useCallback(() => scrollToIdx(activeIdx - 1), [activeIdx, scrollToIdx])
@@ -67,9 +56,8 @@ export function FocusCarousel({
   }, [])
 
   useEffect(() => {
-    const startOffset = getStartOffset()
-    x.set(isNarrow ? startOffset : -(activeIdx * cellWidth) + startOffset)
-  }, [activeIdx, cellWidth, getStartOffset, isNarrow, x])
+    x.set(isNarrow ? 0 : -(activeIdx * cellWidth))
+  }, [activeIdx, cellWidth, isNarrow, x])
 
   const canGoLeft = activeIdx > 0
   const canGoRight = activeIdx < count - 1

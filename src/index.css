@@ -386,7 +386,7 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: clamp(28px, 4.5vh, 56px);
+  gap: clamp(1px, 0.2vh, 20px);
   min-height: min(560px, 72vh);
   overflow: visible;
 }
@@ -417,7 +417,7 @@ a {
 .hero__canvas-hint {
   flex-shrink: 0;
   position: relative;
-  margin: 0;
+  margin: clamp(-34px, -3vh, -18px) 0 0;
   padding: 8px 16px;
   border-radius: 999px;
   font-size: 0.82rem;
@@ -551,6 +551,10 @@ a {
 
   .content-section--publication {
     padding-top: 4px;
+  }
+
+  .content-section__inner {
+    padding-inline: clamp(28px, 7vw, 38px);
   }
 
   .carousel-project-card,
@@ -841,6 +845,7 @@ a {
 
 .content-section__inner {
   position: relative;
+  padding-inline: clamp(36px, 5vw, 72px);
 }
 
 .section-tag {
@@ -924,7 +929,7 @@ a {
 .focus-carousel {
   position: relative;
   width: 100%;
-  padding: 10px 0 18px;
+  padding: 10px var(--section-panel-gutter) 18px;
   overflow: hidden;
 }
 
@@ -941,7 +946,7 @@ a {
 
 .focus-carousel__item {
   will-change: transform, opacity;
-  transform-origin: center center;
+  transform-origin: left top;
   flex-shrink: 0;
 }
 
@@ -975,11 +980,11 @@ a {
 }
 
 .focus-carousel__arrow--left {
-  left: clamp(12px, 3vw, 40px);
+  left: calc(var(--section-panel-gutter) + clamp(12px, 2vw, 24px));
 }
 
 .focus-carousel__arrow--right {
-  right: clamp(12px, 3vw, 40px);
+  right: calc(var(--section-panel-gutter) + clamp(12px, 2vw, 24px));
 }
 
 
